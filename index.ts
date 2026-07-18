@@ -1,8 +1,8 @@
-import { setupTwitch } from "#/utils/twitch/setup.js";
-import { setupEventListener } from "#/utils/twitch/eventListener.js";
-import { setupCommands } from "#/utils/twitch/manualHandler.js";
-import { setupYoutube } from "#/utils/youtube/setup.js";
-import { config, loadConfig } from "#/utils/config.js";
+import { setupTwitch } from "#/common/twitch/setup.js";
+import { setupEventListener } from "#/common/twitch/eventListener.js";
+import { setupCommands } from "#/common/twitch/manualHandler.js";
+import { setupYoutube } from "#/common/youtube/setup.js";
+import { config, loadConfig } from "#/common/config.js";
 
 await loadConfig();
 

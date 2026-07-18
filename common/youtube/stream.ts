@@ -2,8 +2,8 @@ import { setTimeout as sleep } from "node:timers/promises";
 import { YTNodes } from "youtubei.js";
 
 import { YoutubeCtx, YTMessageCallback } from "#/types/youtube.js";
-import { config } from "#/utils/config.js";
-import { defer } from "#/utils/misc.js";
+import { config } from "#/common/config.js";
+import { defer } from "#/common/utils.js";
 
 // Aborts any polling and ends the attached liveChat
 export function stopYtStream(youtube: YoutubeCtx) {
