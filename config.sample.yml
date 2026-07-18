@@ -1,5 +1,6 @@
 twitch:
   channelName: twitchChannel
+  eventListener: true # Enable automatic attachment
 
 youtube:
   channelName: ytChannel

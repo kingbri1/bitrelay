@@ -20,6 +20,7 @@ export async function loadConfig() {
     config = {
         twitch: {
             channelName: parsed.twitch.channelName,
+            eventListener: parsed.twitch.eventListener ?? true,
         },
         youtube: {
             channelName: parsed.youtube.channelName,

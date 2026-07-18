@@ -11,7 +11,10 @@ const twitch = await setupTwitch(config.twitch.channelName);
 const youtube = await setupYoutube(config.youtube.channelName);
 
 // Setup listners and commands
-await setupEventListener(twitch, youtube);
+if (config.twitch.eventListener) {
+    await setupEventListener(twitch, youtube);
+}
+
 await setupCommands(twitch, youtube);
 
 console.log(
